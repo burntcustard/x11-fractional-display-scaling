@@ -48,11 +48,13 @@ This technique uses an (I think) X11-specific workaround with xrandr to make eve
 #### What's display_scale_fix for / HELP! Sometimes everything goes tiny!
 When I (burntcustard) open my laptop lid (not when I suspend, reboot, or close the lid... literally *when it opens*), scaling breaks.
 
-display_scale_fix.sh runs display_scale.sh twice, first to set it to 1, and then whatever number you specify. It's helping me out for now, but I hope there's a better way someone can find.
+display_scale_fix.sh runs display_scale.sh twice, first to set it to 1, and then whatever number you specify. It's helping me out for now, but I hope there's a better way someone can find, or it automagically gets fixed. I have the script set to a keyboard shortcut with the command:
+```
+bash /home/your-username/Documents/display_scale_fix.sh
+```
 
 
 #### Why not just run "xrandr --output eDP-1 --scale 1.5x1.5 --panning 2880x1620" at startup?
-Because:
 
 a) That requires some fiddling to figure out what the name of the display is.
 
